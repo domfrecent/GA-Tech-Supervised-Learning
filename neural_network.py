@@ -18,7 +18,7 @@ class NeuralNetwork(object):
     def __init__(self, data):
         self.data = data
     
-    def show_learning_curve(self,learner):
+    def show_learning_curve(self, learner):
         train_errors = []
         validation_errors = []
         step_size = self.data.x_train.shape[0] / 25        
@@ -70,7 +70,7 @@ class NeuralNetwork(object):
         plt.title(self.data.name + ' Neural Network Error by Epoch')
         plt.legend()
         plt.savefig(img_path)
-#        plt.show()
+        plt.show()
         plt.close()
         
         
